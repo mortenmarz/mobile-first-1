@@ -9,16 +9,17 @@
    --backgr: #FFFDFD ;
    --pink: #FCD2E8;
    --sage: #97B77F;
-
  }
-
 
  main {
    color: var(--contrast);
    background-color: var(--backgr);
-   
  }
 
 h1, h2, h3, h4, h5, h6{
   font-family: "italiana", sans-serif;
+}
+
+p {
+  font-family: "Kaisei Decol", serif;
 }
