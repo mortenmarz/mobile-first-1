@@ -4,14 +4,16 @@
  **/
 
 /* Define variables in the :root */
- :root {
-   --contrast: lime;
-   --backgr: #000;
- }
+:root {
+  --contrast: #FFFDFD;
+  --backgr:  #000000;
+  --pink: #FCD2E8;
+  --sage: #97B77F;
+}
 
-/* Use your variables on elements */
- main {
-   color: var(--contrast);
-   background-color: var(--backgr);
- }
+
+main {
+  color: var(--contrast);
+  background-color: var(--backgr);
+}
 
