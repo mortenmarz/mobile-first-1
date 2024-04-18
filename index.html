@@ -24,7 +24,7 @@
   <main>
     <!--This div is the main flexbox container for the entire mobile layout, to make sure everything stacks properly-->
       <img id="hero" src="images/forside/hero-standin.jpg" alt="Sløret farverig baggrund med en Joy & the Juice Juice, og teskten Joy & the Juice - EnJoy the taste">
-      <p id="hero-tekst">
+      <p id="hero-tekst", id="hero-tekst-desktop">
         Juicekonceptet som er til for kvinder og mødre!<br>
         Vi byder på smagsfulde oplevelser, sundt samvær<br>
         og ikke mindst lærerige og spændende events.<br>
@@ -32,6 +32,11 @@
       </p>
       <!--This div is the and under flexbox with a pink background to contain produkt pictures, etc. Figure out how to round corners and make background pink.-->
       <div class="produkt-forside-box">
+        <h2 id="produkt-intro">
+          Gå på opdagelse i vores særlige Joy & the Juice menu, special designet til kvinder og deres<br> næringsmæssige behov
+        </h2>
+        <div class="desktop-row">
+        <div class="produkt-desktop">
         <h2>
           Pink Artemis Juice
         </h2>
@@ -40,18 +45,22 @@
           En opløftende juice lavet på jordbær, rødbede,<br>
           granatæble, ingefær, appelsin, gulerødder.<br>
         </p>
-        <button type="button">Læs Mere</button>
+        <button class="button"  type="button">Læs Mere</button>
+        </div>
+        <div class="produkt-desktop">
         <h2>
           Green Goddess Sandwich
         </h2>
         <img class="produkt-img" src="images/forside/produkt2-sandwich.jpg" alt="Joy & the Juice, Green Godess Sandwich">
         <p>
-          En nærende sandwich til din indre gudinde.<br>
-          Ingredienser: surdejsbrød, agurk, spinat, <br>
-          feldtsalat, avocado, græsk yoghurt, hampefrø,<br>
-          og radisse.<br>
+          En nærende sandwich til din indre gudinde.
+          Ingredienser: surdejsbrød, agurk, spinat, 
+          feldtsalat, avocado, græsk yoghurt, hampefrø,
+          og radisse.
         </p>
-        <button type="button">Læs Mere</button>
+        <button class="button" id="button2" type="button">Læs Mere</button>
+        </div>
+        </div>
       </div>
 
   <footer>
