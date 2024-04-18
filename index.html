@@ -15,26 +15,48 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Kaisei+Decol&display=swap" rel="stylesheet">
-
-
 </head>
+
 <body>
   <hearder>
 
   </hearder>
   <main>
-    <div>
-    <img src="" alt="Sløret farverig baggrund med en Joy & the Juice Juice, og teskten Joy & the Juice - EnJoy the taste">
-    <h3>
-      Juicekonceptet som er til for kvinder og mødre!<br>
-      Vi byder på smagsfulde oplevelser, sundt samvær<br>
-      og ikke mindst lærerige og spændende events.<br>
-      Joyn' vores fællesskab i dag! 
-    </h3>
+    <!--This div is the main flexbox container for the entire mobile layout, to make sure everything stacks properly-->
+      <img id="hero" src="images/forside/hero-standin.jpg" alt="Sløret farverig baggrund med en Joy & the Juice Juice, og teskten Joy & the Juice - EnJoy the taste">
+      <p id="hero-tekst">
+        Juicekonceptet som er til for kvinder og mødre!<br>
+        Vi byder på smagsfulde oplevelser, sundt samvær<br>
+        og ikke mindst lærerige og spændende events.<br>
+        Joyn' vores fællesskab i dag! 
+      </p>
+      <!--This div is the and under flexbox with a pink background to contain produkt pictures, etc. Figure out how to round corners and make background pink.-->
+      <div class="produkt-forside-box">
+        <h2>
+          Pink Artemis Juice
+        </h2>
+        <img class="produkt-img" src="images/forside/produkt1-juice.jpg" alt="Joy & the Juice, Pink Artemis Juice">
+        <p>
+          En opløftende juice lavet på jordbær, rødbede,<br>
+          granatæble, ingefær, appelsin, gulerødder.<br>
+        </p>
+        <button type="button">Læs Mere</button>
+        <h2>
+          Green Goddess Sandwich
+        </h2>
+        <img class="produkt-img" src="images/forside/produkt2-sandwich.jpg" alt="Joy & the Juice, Green Godess Sandwich">
+        <p>
+          En nærende sandwich til din indre gudinde.<br>
+          Ingredienser: surdejsbrød, agurk, spinat, <br>
+          feldtsalat, avocado, græsk yoghurt, hampefrø,<br>
+          og radisse.<br>
+        </p>
+        <button type="button">Læs Mere</button>
+      </div>
 
-    </div>
+  <footer>
 
-
+  </footer>
   </main>
   <script src="js/js.js"></script>
 </body>

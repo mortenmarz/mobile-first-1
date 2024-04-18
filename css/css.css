@@ -18,8 +18,69 @@ main {
 
 h1, h2, h3, h4, h5, h6{
  font-family: "italiana", sans-serif;
+ 
+ 
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem;
+  
 }
 
 p {
- font-family: "Kaisei Decol", serif;
+  font-family: "Kaisei Decol", serif;
+  font-size: 0.8rem;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+/*Kunne blive et problem ved hero image. Vær opmærksom*/
+
+#hero {
+display: flex;
+width: 100%;
+margin: 0;
+border-radius: 10px;
+}
+
+#hero-tekst {
+  display: flex;
+  text-align: center;
+}
+
+.produkt-forside-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--pink);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.produkt-img {
+  display: block;
+  width: 95%;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.button {
+background-color: var(--backgr);
+border: none;
+color: var(--contrast);
+margin: 0 auto;
+transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: var(--sage);
 }
