@@ -113,6 +113,10 @@ cursor: pointer;
     margin: auto;
   }
 
+  #produkt-intro {
+    font-size: larger;
+  }
+
   .produkt-desktop {
     display: flex;
     flex-direction: column;
@@ -120,12 +124,18 @@ cursor: pointer;
     margin: auto;
   }
 
+/*Fix image alignment issue*/
   .desktop-row {
     display: flex;
     flex-direction: row;
+    align-content: baseline;
     background-color: var(--pink);
     border-radius: 20px;
     text-align: center;
+  }
+
+  #pink-juice {
+    padding-bottom: 1rem;
   }
 
   #hero-tekst {
