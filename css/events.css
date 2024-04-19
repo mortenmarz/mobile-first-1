@@ -23,3 +23,58 @@ h1, h2, h3, h4, h5, h6{
 p {
  font-family: "Kaisei Decol", serif;
 }
+
+#billede1
+{display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {display: flex;
+justify-content: center;
+align-items: center;}
+
+#trebilleder {display: flex;
+flex-direction: row;
+height: 300px; width: auto;
+}
+
+#trebilleder {justify-content: space-around;}
+
+ {height: 100px width:auto;}
+
+#billede1 {margin: auto;
+border-radius: 10%;}
+
+#billede2 {border-radius: 10%;}
+
+#billede3 {border-radius: 10%;}
+
+#billede4 {border-radius: 10%;}
+
+@media (max-width: 500px) {
+  
+  
+  #billede1{
+    max-width: 100%;
+  }
+  #billede2{
+    max-width: 100%;
+  }
+  #billede3{
+    max-width: 100%;
+  }
+  #billede4{
+    max-width: 100%;
+    max-height: auto;
+    margin-left: 13%;
+    margin-right: auto;
+    
+  }
+  #trebilleder{
+    display: block;
+    max-width: 90%;
+  }
+}
+  
