@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6{
  font-family: "italiana", sans-serif;
 }
 
-/* v Hearder Mobil menu v */
+/* v Header Mobil menu v */
 #menu-logo {
   width: 4rem;
   margin-bottom: 0.1rem;
@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6{
 
 #menu-links {
   display: none;
+  font-family: "Kaisei Decol", serif;
 }
 
 .mobil-menu a {
@@ -74,7 +75,7 @@ h1, h2, h3, h4, h5, h6{
   border-radius: 10px;
 }
 
-/* ^Hearder Mobil menu^ */
+/* ^Header Mobil menu^ */
 
 h2 {
   font-weight: 700;
@@ -149,7 +150,6 @@ cursor: pointer;
   margin-bottom: 1rem;
 }
 
-/*button hover not working. fix issue*/
 .button:hover {
   background-color: var(--sage)
 }
@@ -163,7 +163,10 @@ cursor: pointer;
     display: none;
   }
 
-
+  #menu-titel {
+    font-weight: bold;
+    margin: auto;
+  }
 
   #menu-links {
     display: flex;
