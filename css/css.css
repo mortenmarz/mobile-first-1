@@ -57,6 +57,7 @@ h1, h2, h3, h4, h5, h6{
   text-decoration: none;
   font-size: 17px;
   display: block;
+  float:left;
 }
 
 .mobil-menu a.icon {
@@ -72,7 +73,6 @@ h1, h2, h3, h4, h5, h6{
   color: var(--contrast);
   border-radius: 10px;
 }
-
 
 /* ^Hearder Mobil menu^ */
 
@@ -157,7 +157,26 @@ cursor: pointer;
 
 @media (min-width: 501px) {
 
-  #hero-tekst-desktop
+/*Header Desktop CSS*/
+
+  .mobil-menu a.icon {
+    display: none;
+  }
+
+
+
+  #menu-links {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+
+  .entire-mobil-menu {
+    justify-content: space-between;
+  }
+
+/*Header Desktop CSS*/
+
   .produkt-img {
     display: flex;
     flex-direction: row;
@@ -177,7 +196,6 @@ cursor: pointer;
     margin: auto;
   }
 
-/*Fix image alignment issue*/
   .desktop-row {
     display: flex;
     flex-direction: row;
