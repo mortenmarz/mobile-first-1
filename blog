@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="ex, ex, ex,">
   <meta name="author" content="">
   <title>Joy & the Juice - Blog</title>
   <link rel="stylesheet" href="css/blog.css">
@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Kaisei+Decol&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>Content here</main>
+  <main>Content here test</main>
   <script src="js/js.js"></script>
 </body>
 </html>

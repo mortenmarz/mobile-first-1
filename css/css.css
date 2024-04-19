@@ -16,10 +16,122 @@ main {
   background-color: var(--backgr);
 }
 
+/*Optimised for Mobile devices with width between 320px to 800px*/
+@media (min-width: 320px) {
+
 h1, h2, h3, h4, h5, h6{
  font-family: "italiana", sans-serif;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem;
+}
+
 p {
- font-family: "Kaisei Decol", serif;
+  font-family: "Kaisei Decol", serif;
+  font-size: 0.8rem;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+
+#hero {
+display: flex;
+width: 100%;
+margin: 0;
+border-radius: 10px;
+}
+
+#hero-tekst {
+  display: flex;
+  text-align: center;
+}
+
+#produkt-intro {
+  display: flex;
+  text-align: center;
+  font-weight: 900;
+  font-size: small;
+}
+
+.produkt-forside-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--pink);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.produkt-img {
+  display: block;
+  width: 95%;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.button {
+background-color: var(--backgr);
+border: none;
+border-radius: 5px;
+color: var(--contrast);
+padding: 0.3rem 1.5rem;
+margin: auto;
+text-align: center;
+font-family: "Kaisei Decol", serif;
+font-weight: 600;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+#button2 {
+  margin-bottom: 1rem;
+}
+
+/*button hover not working. fix issue*/
+.button:hover {
+  background-color: var(--sage)
+}
+}
+
+@media (min-width: 501px) {
+
+  #hero-tekst-desktop
+  .produkt-img {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    border-radius: 20px;
+    margin: auto;
+  }
+
+  .produkt-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .desktop-row {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--pink);
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  #hero-tekst {
+    display: flex;
+    text-align: center;
+    font-size: large;
+  }
+  
 }
