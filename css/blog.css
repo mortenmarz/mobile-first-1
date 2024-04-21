@@ -26,22 +26,22 @@ p {
 
 
 
-
-
 /* Stilarter for mobile skærme */
 @media (max-width: 768px) {
   /* Tilpasninger til layout, størrelser og placering for mobile */
   .container {
     width: 90%; /* Gør containeren lidt smalere på mobile skærme */
     margin: 0 auto; /* Centrer containeren */
-    
   }
-  .flexbox-container {
-    display: flex;
-    flex-direction: row;
-  }
+
+  
   .flexbox-row {
     flex-direction: column;
+  }
+  
+  .image-wrapper {
+    width: 100%; /* Gør billedet og teksten fuld bredde */
+    margin-bottom: 20px; /* Tilføj en margen mellem sektionerne */
   }
 }
 
@@ -54,7 +54,9 @@ p {
     width: 80%; /* Gør containeren lidt bredere på desktopskærme */
     margin: 0 auto; /* Centrer containeren */
   }
-
+  .flexbox-row {
+    flex-direction: row;
+  }
   
 }
 
@@ -138,19 +140,13 @@ p {
   background-color:  #FCD2E8;
 }
   
-.flexbox-row-top {
+.flexbox-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
   margin-top: 10px;
 }
 
-.flexbox-row-bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
 
 
 
