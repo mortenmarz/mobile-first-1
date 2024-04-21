@@ -119,13 +119,15 @@ p {
   flex-basis: calc(33.33% - 10px); /* Tre billeder pr. række, med 10px margin mellem dem */
   text-align: center;
   line-height: 1.2;
- 
+  font-size: 12.5px;
+  position: relative; /* Tilføj position: relative; for at gøre det lettere at positionere knappen */
+}
   
 
-}
+
 
 .equal-size-image {
-  width: 100%; /* Gør billedet fyldt til bredden af dets container */
+  width: 95%; /* Gør billedet fyldt til bredden af dets container */
   height: 65%; /* Gør billedet fyldt til højden af dets container */
   object-fit: cover; /* Skalér billedet, så det passer til containeren uden at miste proportioner */
   border-radius: 10%;
@@ -144,10 +146,20 @@ p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 
-
+.read-more-button {
+  position: absolute; /* Sæt positionen til absolut for at overlægge knappen på teksten */
+  bottom: 80px; /* Juster afstanden fra bunden af sektionen efter behov */
+  transform: translateX(-50%); /* Centrer knappen vandret i forhold til sektionens bredde */
+  margin-top: 5px; /* Tilføj en øverste margin for at adskille knappen fra teksten */
+  width: 110px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: larger;
+ /*sæt en anden font ind her*/
+}
 
 
