@@ -23,3 +23,143 @@ h1, h2, h3, h4, h5, h6{
 p {
  font-family: "Kaisei Decol", serif;
 }
+
+
+
+/* Stilarter for mobile skærme */
+@media (max-width: 768px) {
+  /* Tilpasninger til layout, størrelser og placering for mobile */
+  .container {
+    width: 90%; /* Gør containeren lidt smalere på mobile skærme */
+    margin: 0 auto; /* Centrer containeren */
+  }
+
+  
+  .flexbox-row {
+    flex-direction: column;
+  }
+  
+  .image-wrapper {
+    width: 100%; /* Gør billedet og teksten fuld bredde */
+    margin-bottom: 20px; /* Tilføj en margen mellem sektionerne */
+  }
+}
+
+
+
+/* Stilarter for desktopskærme */
+@media (min-width: 769px) {
+  /* Tilpasninger til layout, størrelser og placering for desktop */
+  .container {
+    width: 80%; /* Gør containeren lidt bredere på desktopskærme */
+    margin: 0 auto; /* Centrer containeren */
+  }
+  .flexbox-row {
+    flex-direction: row;
+  }
+  
+}
+
+
+
+/* v Header Mobil menu v */
+#menu-logo {
+  width: 4rem;
+  margin-bottom: 0.1rem;
+}
+
+#menu-titel {
+  font-size: 1.5rem;
+}
+
+.entire-mobil-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.mobil-menu {
+  overflow: visible;
+  background-color: var(--backgr);
+  position: relative;
+}
+
+#menu-links {
+  display: none;
+}
+
+.mobil-menu a {
+  color: var(--contrast);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.mobil-menu a.icon {
+  background: var(--pink);
+  display: block;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 0.4rem;
+}
+
+.mobil-menu a:hover {
+  background-color: var(--pink);
+  color: var(--contrast);
+  border-radius: 10px;
+}
+
+
+/* ^Header Mobil menu^ */
+
+.image-wrapper {
+  flex-basis: calc(33.33% - 10px); /* Tre billeder pr. række, med 10px margin mellem dem */
+  text-align: center;
+  line-height: 1.2;
+  font-size: 12.5px;
+  position: relative; /* Tilføj position: relative; for at gøre det lettere at positionere knappen */
+}
+  
+
+
+
+.equal-size-image {
+  width: 95%; /* Gør billedet fyldt til bredden af dets container */
+  height: 65%; /* Gør billedet fyldt til højden af dets container */
+  object-fit: cover; /* Skalér billedet, så det passer til containeren uden at miste proportioner */
+  border-radius: 10%;
+  flex-basis: calc(33.33% - 30px); /* Tre billeder pr. række, med 10px margin mellem dem */
+  box-sizing: border-box;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column; /* Stak elementerne vertikalt */
+  justify-content: center;
+  background-color:  #FCD2E8;
+}
+  
+.flexbox-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+
+.read-more-button {
+  position: absolute; /* Sæt positionen til absolut for at overlægge knappen på teksten */
+  bottom: 80px; /* Juster afstanden fra bunden af sektionen efter behov */
+  transform: translateX(-50%); /* Centrer knappen vandret i forhold til sektionens bredde */
+  margin-top: 5px; /* Tilføj en øverste margin for at adskille knappen fra teksten */
+  width: 110px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: larger;
+ /*sæt en anden font ind her*/
+}
+
+

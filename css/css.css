@@ -17,11 +17,65 @@ main {
 }
 
 /*Optimised for Mobile devices with width between 320px to 800px*/
-@media (min-width: 320px) {
+@media (min-width: 320px),(max-width:500px) {
 
 h1, h2, h3, h4, h5, h6{
  font-family: "italiana", sans-serif;
 }
+
+/* v Header Mobil menu v */
+#menu-logo {
+  width: 4rem;
+  margin-bottom: 0.1rem;
+}
+
+#menu-titel {
+  font-size: 1.5rem;
+}
+
+.entire-mobil-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.mobil-menu {
+  overflow: visible;
+  background-color: var(--backgr);
+  position: relative;
+}
+
+#menu-links {
+  display: none;
+  font-family: "Kaisei Decol", serif;
+}
+
+.mobil-menu a {
+  color: var(--contrast);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  float:left;
+}
+
+.mobil-menu a.icon {
+  background: var(--pink);
+  display: block;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 0.4rem;
+}
+
+.mobil-menu a:hover {
+  background-color: var(--pink);
+  color: var(--contrast);
+  border-radius: 10px;
+}
+
+/* ^Header Mobil menu^ */
 
 h2 {
   font-weight: 700;
@@ -96,7 +150,6 @@ cursor: pointer;
   margin-bottom: 1rem;
 }
 
-/*button hover not working. fix issue*/
 .button:hover {
   background-color: var(--sage)
 }
@@ -104,13 +157,39 @@ cursor: pointer;
 
 @media (min-width: 501px) {
 
-  #hero-tekst-desktop
+/*Header Desktop CSS*/
+
+  .mobil-menu a.icon {
+    display: none;
+  }
+
+  #menu-titel {
+    font-weight: bold;
+    margin: auto;
+  }
+
+  #menu-links {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+
+  .entire-mobil-menu {
+    justify-content: space-between;
+  }
+
+/*Header Desktop CSS*/
+
   .produkt-img {
     display: flex;
     flex-direction: row;
     width: 95%;
     border-radius: 20px;
     margin: auto;
+  }
+
+  #produkt-intro {
+    font-size: larger;
   }
 
   .produkt-desktop {
@@ -123,9 +202,14 @@ cursor: pointer;
   .desktop-row {
     display: flex;
     flex-direction: row;
+    align-content: baseline;
     background-color: var(--pink);
     border-radius: 20px;
     text-align: center;
+  }
+
+  #pink-juice {
+    padding-bottom: 1rem;
   }
 
   #hero-tekst {

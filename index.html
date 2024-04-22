@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="ex, ex, ex,">
-  <meta name="author" content="">
+  <meta name="description" content="Velkommen til Joy & the Juice! Det nye Joe & the Juice univers, designet helt specielt til kvinder. Find alt fra events til nye produkter - alt sammen med et feminint touch og kvinders behov i centrum">
+  <meta name="keywords" content="Joy and the Juice, Joe and the Juice, ">
+  <meta name="author" content="Mie Jensen">
   <title>Joy & the Juice</title>
   <link rel="stylesheet" href="css/css.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,18 +15,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Kaisei+Decol&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <hearder>
-
+    <div class="entire-mobil-menu">
+      <a href="index.html">
+      <img src="images/forside/logo.png" alt="Joy & the Juice logo" id="menu-logo">
+      </a>
+          <!-- Husk at skifte titlen så det passer til din side -->
+      <h1 id="menu-titel">Joy & the Juice</h1>
+    <div class="mobil-menu">
+      <div id="menu-links" >
+        <a href="#produkter.html">Produkter</a>
+        <a href="#events.html">Events</a>
+        <a href="#blog.html">Blog</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    </div>
   </hearder>
   <main>
     <!--This div is the main flexbox container for the entire mobile layout, to make sure everything stacks properly-->
-      <img id="hero" src="images/forside/hero-standin.jpg" alt="Sløret farverig baggrund med en Joy & the Juice Juice, og teskten Joy & the Juice - EnJoy the taste">
+      <img id="hero" src="images/forside/hero.png" alt="Sløret farverig baggrund med en Joy & the Juice Juice, og teskten Joy & the Juice - EnJoy the taste">
       <p id="hero-tekst", id="hero-tekst-desktop">
-        Juicekonceptet som er til for kvinder og mødre!<br>
-        Vi byder på smagsfulde oplevelser, sundt samvær<br>
+        Juicekonceptet som er til for kvinder og mødre!
+        Vi byder på smagsfulde oplevelser, sundt samvær
         og ikke mindst lærerige og spændende events.<br>
         Joyn' vores fællesskab i dag! 
       </p>
@@ -36,29 +53,30 @@
           Gå på opdagelse i vores særlige Joy & the Juice menu, special designet til kvinder og deres<br> næringsmæssige behov
         </h2>
         <div class="desktop-row">
-        <div class="produkt-desktop">
-        <h2>
-          Pink Artemis Juice
-        </h2>
-        <img class="produkt-img" src="images/forside/produkt1-juice.jpg" alt="Joy & the Juice, Pink Artemis Juice">
-        <p>
-          En opløftende juice lavet på jordbær, rødbede,<br>
-          granatæble, ingefær, appelsin, gulerødder.<br>
-        </p>
-        <button class="button"  type="button">Læs Mere</button>
+        <div class="produkt-desktop" id="pink-juice">
+          <h2>
+            Pink Artemis Juice
+          </h2>
+          <img class="produkt-img" src="images/forside/juice.png" alt="Joy & the Juice, Pink Artemis Juice">
+          <p>
+            En opløftende juice perfekt til 'mig tid'. <strong>Ingredienser:</strong>
+            lavet på jordbær, rødbede,
+            granatæble, ingefær, appelsin, gulerødder.
+          </p>
+          <button class="button"  type="button">Læs Mere</button>
         </div>
         <div class="produkt-desktop">
-        <h2>
-          Green Goddess Sandwich
-        </h2>
-        <img class="produkt-img" src="images/forside/produkt2-sandwich.jpg" alt="Joy & the Juice, Green Godess Sandwich">
-        <p>
-          En nærende sandwich til din indre gudinde.
-          Ingredienser: surdejsbrød, agurk, spinat, 
-          feldtsalat, avocado, græsk yoghurt, hampefrø,
-          og radisse.
-        </p>
-        <button class="button" id="button2" type="button">Læs Mere</button>
+          <h2>
+            Green Goddess Sandwich
+          </h2>
+          <img class="produkt-img" src="images/forside/sandwich.png" alt="Joy & the Juice, Green Godess Sandwich">
+          <p>
+            En nærende sandwich til din indre gudinde.
+            <strong>Ingredienser:</strong> surdejsbrød, agurk, spinat, 
+            feldtsalat, avocado, græsk yoghurt, hampefrø,
+            og radisse.
+          </p>
+          <button class="button" id="button2" type="button">Læs Mere</button>
         </div>
         </div>
       </div>
